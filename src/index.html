@@ -8,13 +8,29 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
-  <script src="./blocking.script.js"></script>
-  <link href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i"
-    rel="stylesheet">
 </head>
 
 <body>
   <speed-root></speed-root>
+
+  <script async>
+    const styles = ['https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i'];
+    const scripts = ['./blocking.script.js'];
+    window.onload = () => {
+      for (let style of styles) {
+        const LINK = document.createElement('link');
+        LINK.href = style;
+        LINK.rel = 'stylesheet';
+        document.head.appendChild(LINK);
+      }
+      for (let script of scripts) {
+        const SCRIPT = document.createElement('script');
+        SCRIPT.src = script;
+        SCRIPT.async = true;
+        document.body.appendChild(SCRIPT);
+      }
+    }
+  </script>
 </body>
 
 </html>
