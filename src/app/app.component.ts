@@ -7,16 +7,16 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   public images: string[] = [
-    'assets/gallery/one.jpeg',
-    'assets/gallery/two.jpeg',
-    'assets/gallery/three.jpeg',
-    'assets/gallery/four.jpeg',
-    'assets/gallery/five.jpeg',
-    'assets/gallery/six.jpeg',
-    'assets/gallery/seven.jpeg',
-    'assets/gallery/eight.jpeg',
-    'assets/gallery/nine.jpeg',
-    'assets/gallery/ten.jpeg',
+    'assets/gallery/one.webp',
+    'assets/gallery/two.webp',
+    'assets/gallery/three.webp',
+    'assets/gallery/four.webp',
+    'assets/gallery/five.webp',
+    'assets/gallery/six.webp',
+    'assets/gallery/seven.webp',
+    'assets/gallery/eight.webp',
+    'assets/gallery/nine.webp',
+    'assets/gallery/ten.webp',
   ];
 
   constructor() {}

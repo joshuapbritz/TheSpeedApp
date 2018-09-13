@@ -1,7 +1,7 @@
 <div class="gallery-inner">
   <div class="gallery-item" *ngFor="let image of images;let i = index">
     <div class="image">
-      <img [src]="image" alt="image-{{i}}">
+      <img speedLazyLoad [src]="image" alt="image-{{i}}">
     </div>
 
     <div class="item-title">
