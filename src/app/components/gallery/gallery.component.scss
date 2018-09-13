@@ -1,0 +1,38 @@
+:host {
+  display: block;
+  height: auto;
+  width: 90%;
+  max-width: 950px;
+  margin: auto;
+
+  .gallery-inner {
+    width: 100%;
+    height: auto;
+
+    .gallery-item {
+      padding: 15px;
+      width: 50%;
+      float: left;
+
+      .item-title {
+        padding: 15px 5px;
+        font-size: 20px;
+        text-align: center;
+      }
+
+      .image {
+        img {
+          width: 100%;
+          height: auto;
+          display: block;
+        }
+      }
+    }
+
+    &::after {
+      content: '';
+      display: table;
+      clear: both;
+    }
+  }
+}
